@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,400i,500,700|Montserrat');
+
+
+//font-family:'Montserrat', sans-serif;
+//
+//font-family:'Asap', sans-serif;
+
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Asap', sans-serif;
+  font-weight: 400; //regular
+  text-align: center;
+}
+
+h1{
+  font-size: 90px;
+}
+h2{
+  font-weight: 700; //bold
+  font-size: 46px;
+  text-transform: uppercase;
+}
+h3{
+  font-weight: 500; //medium
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.wrapper{
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  &>section:nth-of-type(odd){
+    background-color: white;
+  }
+  &>section:nth-of-type(even){
+    background-color: #f6f6f6;
+  }
+}
+button{
+  text-transform: uppercase;
+}
+.wrap{
+  max-width: 1170px;
+  margin: 0 auto;
+
+}
+.flexRow{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+header{
+  background: url("../img/bg-element.png");
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  & .wrap{
+    display: flex;
+    flex-flow: column nowrap;
+    & nav{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+    & menu{
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      & li{
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      & li:hover{
+        text-transform: none;
+      }
+    }
+  }
+}
+
+#knowMore{
+
+}
+
+#services{
+  & .wrap{
+    & .flexRow{
+      &>div{
+        //width: 25%;
+        width: 380px;
+      }
+    }
+  }
+}
+
+#skills{
+
+}
+
+#portfolio{
+
+}
+
+#testimonials{
+
+}
+
+#funFact{
+
+}
+
+footer{
+  background: url("../img/contactbg.png");
+}
+
+//debugging
+*{
+  //border: 1px solid red;
+}
