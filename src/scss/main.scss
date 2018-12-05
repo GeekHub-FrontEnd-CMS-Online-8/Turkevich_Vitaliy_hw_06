@@ -1,144 +1,1 @@
-@import url('https://fonts.googleapis.com/css?family=Asap:400,400i,500,700|Montserrat');
-
-
-//font-family:'Montserrat', sans-serif;
-//
-//font-family:'Asap', sans-serif;
-
-
-
-body{
-  margin: 0;
-  padding: 0;
-  font-family: 'Asap', sans-serif;
-  font-weight: 400; //regular
-  text-align: center;
-}
-
-h1{
-  font-size: 90px;
-}
-h2{
-  font-weight: 700; //bold
-  font-size: 46px;
-  text-transform: uppercase;
-}
-h3{
-  font-weight: 500; //medium
-  font-size: 30px;
-  text-transform: uppercase;
-}
-.wrapper{
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
-  &>section:nth-of-type(odd){
-    background-color: white;
-  }
-  &>section:nth-of-type(even){
-    background-color: #f6f6f6;
-  }
-}
-button{
-  text-transform: uppercase;
-}
-.wrap{
-  max-width: 1170px;
-  margin: 0 auto;
-
-}
-
-
-header{
-  background: url("../img/bg-element.png");
-  -webkit-background-size: 100%;
-  background-size: 100%;
-  padding: 15px 0;
-  & .wrap{
-    display: flex;
-    flex-flow: column nowrap;
-
-    & nav{
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-    }
-    & menu{
-      display: flex;
-      & li{
-        list-style: none;
-        text-transform: uppercase;
-        width: 90px;
-        & a{
-          text-decoration: none;
-          color: #4d4d4d;
-        }
-        & a:hover{
-          border-bottom: 3px solid rgba(77, 77, 77, 0.6);
-          text-transform: none;
-          padding-bottom: 5px;
-        }
-      }
-      //& li:hover::after{
-      //  display: flex;
-      //  content: " ";
-      //  border: 1px solid #4d4d4d;
-      //
-      //  width: 20px;
-      //}
-    }
-
-    & .flexRowWrap:first-child{
-      text-align: left;
-    }
-  }
-}
-
-#knowMore{
-
-}
-.flexRowWrap{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-#services{
-  & .wrap{
-    & div{
-      &>div{
-        display: inline-flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content: space-between;
-        align-content: baseline;
-        width: 386px;
-      }
-    }
-  }
-}
-
-#skills{
-
-}
-
-#portfolio{
-
-}
-
-#testimonials{
-
-}
-
-#funFact{
-
-}
-
-footer{
-  background: url("../img/contactbg.png");
-}
-
-//debugging
-nav *{
-  //border: 1px solid red;
-  box-sizing:border-box;
-}
+@import url('https://fonts.googleapis.com/css?family=Asap:400,400i,500,700|Montserrat');//font-family:'Montserrat', sans-serif;////font-family:'Asap', sans-serif;body{  margin: 0;  padding: 0;  font-family: 'Asap', sans-serif;  font-weight: 400; //regular  text-align: center;}h1{  font-size: 90px;  color: #4d4d4d;  margin: 150px 0 0;}h2{  font-weight: 700; //bold  font-size: 46px;  text-transform: uppercase;  color: #4d4d4d;  &::before{    content: "";    width: 60px;    display: block;    margin: 0 auto 5px;    border: 1px solid /*rgba(77,77,77, .7)*/ #4d4d4d ;  }}h3{  font-weight: 500; //medium  font-size: 30px;  text-transform: uppercase;}.wrapper{  width: 100%;  max-width: 1366px;  margin: 0 auto;  &>section{    padding: 100px 0;  }  &>section:nth-of-type(odd){    background-color: white;  }  &>section:nth-of-type(even){    background-color: #f6f6f6;  }}button{  text-transform: uppercase;  background: none;  border: 1px solid #4d4d4d;  margin-right: 20px;  font-size: 16px;  width: 160px;  height: 47px;  cursor: pointer;  &:hover{    box-shadow: 0 0 26px 0 rgba(25, 25, 25, .5);    border: none;    background: #ffffff;  }}.wrap{  max-width: 1170px;  margin: 0 auto;}header{  background: url("../img/bg-element.png");  -webkit-background-size: 100%;  background-size: 100%;  padding: 15px 0;  & p{    color: #4d4d4d;    font-size: 22px;    font-weight: 500;  }  & .wrap{    display: flex;    flex-flow: column nowrap;    & nav{      display: flex;      flex-flow: row wrap;      justify-content: space-between;    }    & menu{      display: flex;      & li{        list-style: none;        text-transform: uppercase;        width: 90px;        & a{          text-decoration: none;          color: #4d4d4d;        }        & a:hover{          border-bottom: 3px solid rgba(77, 77, 77, 0.6);          text-transform: none;          padding-bottom: 5px;        }      }    }    & .flexRowWrap >div{      text-align: left;    }  }}#knowMore{  color: #4d4d4d;  & .wrap{    & > div{      text-align: left;      width: 36%;      & h2{        margin-bottom: 5px;      }      & h2::before{        margin: 0 0 5px;      }    }    & img{      width: 570px;    }  }  & button{    width: 250px;  }}.flexRowWrap{  display: flex;  flex-flow: row wrap;  justify-content: space-between;}#services{  & .wrap{    & div{      &>div{        display: inline-flex;        flex-flow: column nowrap;        align-items: center;        justify-content: space-between;        align-content: baseline;        width: 386px;      }    }  }}#skills{}#portfolio{  & .container{    &>a{      position: relative;      width: 369px;      height: 318px;      margin: 15px 0;      @for $i from 1 through 6{        &:nth-child(#{$i}){          background: url("../img/#{$i}port.png");        }      }      &>i{        display: none;        position: absolute;        top: 50%;        left: 50%;        color: #333333;      }      &:hover{        box-shadow: 0 0 26px 0 rgba(25, 25, 25, .5);      }      &:hover i{        display: block;      }    }  }}#testimonials{}#funFact{  & .container{    position: relative;    & > div{      display: inline-flex;      flex-flow: column nowrap;      align-items: center;      width: 280px;    }  }}footer{  background: url("../img/contactbg.png");}//debuggingnav *{  //border: 1px solid red;  box-sizing:border-box;}
