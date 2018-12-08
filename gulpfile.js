@@ -15,7 +15,6 @@ gulp.task('scss', function () {
 	return gulp.src('src/scss/**/*.scss')
 		.pipe(scss())
 		.pipe(gulp.dest('build/css'))
-		//.on('error', scss.logError) // ???
 		.pipe(browserSync.reload({stream: true}))
 });
 
